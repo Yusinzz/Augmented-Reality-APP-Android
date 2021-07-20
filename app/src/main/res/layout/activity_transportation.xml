@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="TransportationActivity"
+            type="tw.edu.ncku.im.yusin.arpractice.TransportationActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/AR1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TransportationActivity">
+
+
+        <fragment
+            android:id="@+id/sceneform_fragment2"
+            android:name="com.google.ar.sceneform.ux.ArFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/scroll"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="9"
+            tools:layout_editor_absoluteX="201dp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sceneform_fragment2"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1">
+
+            <LinearLayout
+                android:id="@+id/galleryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/tank"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/futrue_tank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/future_tank"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/boat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/boat"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/space"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/x_plane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/x_plane"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/x_plane1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/x_plane1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/old_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/old_car"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/race_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/race_car"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/race_car1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/race_car1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/future_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/future_car"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/record2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/take_photo_icon"
+            android:textColor="@color/black"
+            android:textOff="Start"
+            android:textOn="Stop"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

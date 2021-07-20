@@ -1,0 +1,84 @@
+{
+  materials: [
+    {
+      name: 'Future_Car',
+      parameters: [
+        {
+          baseColor: 'Future Car_C',
+        },
+        {
+          baseColorTint: [
+            0.64000000000000001,
+            0.64000000000000001,
+            0.64000000000000001,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'glass',
+      parameters: [
+        {
+          baseColor: 'Future Car_C',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.051570999999999999,
+        },
+        {
+          opacity: 0.134796,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/future_car/Future Car.obj',
+    name: 'Future Car',
+    recenter: 'root',
+    scale: 0.45400000000000001,
+  },
+  samplers: [
+    {
+      file: 'sampledata/future_car/Future Car_N.jpg',
+      name: 'Future Car_N',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'Future Car_N.jpg',
+    },
+    {
+      file: 'sampledata/future_car/Future Car_C.jpg',
+      name: 'Future Car_C',
+      pipeline_name: 'Future Car_C.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

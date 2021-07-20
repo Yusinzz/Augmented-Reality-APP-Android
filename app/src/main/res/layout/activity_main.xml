@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="Main"
+            type="tw.edu.ncku.im.yusin.arpractice.MainActivity" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:background="@drawable/main">
+
+
+
+        <Button
+            android:id="@+id/goin"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-240dp"
+            android:text="Welcome"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_corner"/>
+
+    </FrameLayout>
+
+
+</layout>

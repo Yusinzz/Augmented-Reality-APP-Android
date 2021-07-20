@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'SpaceShuttle_mat',
+      parameters: [
+        {
+          baseColor: 'SpaceShuttle_BaseColor',
+        },
+        {
+          baseColorTint: [
+            0.5,
+            0.5,
+            0.5,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/space/SpaceShuttle(1).obj',
+    name: 'SpaceShuttle(1)',
+    recenter: 'root',
+    scale: 0.055814999999999997,
+  },
+  samplers: [
+    {
+      file: 'sampledata/space/SpaceShuttle_BaseColor.png',
+      name: 'SpaceShuttle_BaseColor',
+      pipeline_name: 'SpaceShuttle_BaseColor.png',
+    },
+  ],
+  version: '0.54:2',
+}

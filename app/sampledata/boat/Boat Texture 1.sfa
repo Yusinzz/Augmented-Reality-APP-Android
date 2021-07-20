@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'lambert3SG',
+      parameters: [
+        {
+          baseColor: 'Boat texture',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/boat/Boat Texture 1.obj',
+    name: 'Boat Texture 1',
+    recenter: 'root',
+    scale: 0.0024390000000000002,
+  },
+  samplers: [
+    {
+      file: 'sampledata/boat/Boat texture.png',
+      name: 'Boat texture',
+      pipeline_name: 'Boat texture.png',
+    },
+  ],
+  version: '0.54:2',
+}

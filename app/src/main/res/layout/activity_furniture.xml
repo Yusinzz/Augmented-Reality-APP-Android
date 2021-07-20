@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="FurnitureActivity"
+            type="tw.edu.ncku.im.yusin.arpractice.FurnitureActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/AR1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FurnitureActivity">
+
+
+        <fragment
+            android:id="@+id/sceneform_fragment"
+            android:name="com.google.ar.sceneform.ux.ArFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/scroll"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="9"
+            tools:layout_editor_absoluteX="201dp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sceneform_fragment"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintVertical_weight="1">
+
+            <LinearLayout
+                android:id="@+id/galleryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/chair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/chair"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/couch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/couch"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/pan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/pan"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/desk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/desk"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/camera"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/piano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/piano"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/kitchen_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/kitchen_table"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+                <Button
+                    android:id="@+id/bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/bed"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/computer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableTop="@drawable/computer"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toEndOf="parent" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/record"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/take_photo_icon"
+            android:textColor="@color/black"
+            android:textOff="Start"
+            android:textOn="Stop"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

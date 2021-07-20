@@ -1,0 +1,42 @@
+{
+  materials: [
+    {
+      name: 'Mat.5',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.250276,
+            0.29255300000000001,
+            0.36056500000000002,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/dolphin/Dolphin.obj',
+    name: 'Dolphin',
+    recenter: 'root',
+    scale: 0.0085349999999999992,
+  },
+  version: '0.54:2',
+}
